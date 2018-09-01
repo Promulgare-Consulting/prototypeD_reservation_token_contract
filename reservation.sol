@@ -1,8 +1,7 @@
 pragma solidity ^0.4.24;
 
 
-import "github.com/OpenZeppelin/openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
-
+import "github.com/OpenZeppelin/zeppelin-solidity/contracts/token/ERC20/ERC20.sol";
 
 /**
  * @title ReservationToken
@@ -10,7 +9,7 @@ import "github.com/OpenZeppelin/openzeppelin-solidity/contracts/token/ERC20/Stan
  * Note they can later distribute these tokens as they wish using `transfer` and other
  * `StandardToken` functions.
  */
-contract ReservationToken is StandardToken {
+contract ReservationToken is ERC20  {
 
   string public constant name = "ReservationToken";
   string public constant symbol = "PTD";
